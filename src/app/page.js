@@ -7,22 +7,20 @@ import { HandleSoundContext } from "../components/Header";
 
 function Home() {
   return (
-    <HandleSoundContext.Provider value={(soundEnabled, setIsSoundEnabled)}>
-      <MaxWidthWrapper as="main" className={styles.wrapper}>
-        <h1>Welcome to the zaniest place on the ‘Web!</h1>
-        <p>
-          Hey there, fellow netizens! If you're reading this, you've stumbled
-          upon the coolest corner of the internet: my awesome website. Get ready
-          to embark on a nostalgic journey back to the groovy era of the 90s,
-          where the web was wild, and creativity ran free!
-        </p>
-        <p>
-          I've created the gnarliest drum machine ever. Press the buttons to
-          hear the music. Tubular!
-        </p>
-        <DrumMachine />
-      </MaxWidthWrapper>
-    </HandleSoundContext.Provider>
+    <MaxWidthWrapper as="main" className={styles.wrapper}>
+      <h1>Welcome to the zaniest place on the ‘Web!</h1>
+      <p>
+        Hey there, fellow netizens! If you're reading this, you've stumbled upon
+        the coolest corner of the internet: my awesome website. Get ready to
+        embark on a nostalgic journey back to the groovy era of the 90s, where
+        the web was wild, and creativity ran free!
+      </p>
+      <p>
+        I've created the gnarliest drum machine ever. Press the buttons to hear
+        the music. Tubular!
+      </p>
+      <DrumMachine />
+    </MaxWidthWrapper>
   );
 }
 
